@@ -49,10 +49,8 @@ export default function Discover({ isOpen, setIsOpen }: SideNavBarProps) {
     const movieDetails = await getMovieGenres();
     const genreOptions = await getMovieGenreIDs();
 
-    const findID = movieDetails.results.map(
-      (id: { genre_ids: number[] }) => id.genre_ids
-    );
-
+//  This function  creates a lookup object, `genreLookup`, that maps the genre IDs to their corresponding names.
+    // 
     const genreLookup = genreOptions.genres.reduce(
       (
         acc: { [x: string]: any },
@@ -62,11 +60,6 @@ export default function Discover({ isOpen, setIsOpen }: SideNavBarProps) {
         return acc;
       },
       {}
-    );
-
-    const filmsWithGenreNames: string[] = findID.map(
-      (genreIds: number[]): string =>
-        genreIds.map((id: number) => genreLookup[id] || "Unknown").join(" | ")
     );
 
     setState({
