@@ -105,8 +105,6 @@ export default function ExpandableFilters({
       </FilterSection>
     </FilterWrapper>
   );
-
-  // You need to create your own checkbox component with a custom checkmark
 }
 
 // Styled components
@@ -114,12 +112,6 @@ const FilterWrapper = styled.div`
   width: 300px;
   font-family: Arial, sans-serif;
 `;
-
-// const FilterHeader = styled.div`
-//   font-size: 1.2em;
-//   font-weight: bold;
-//   margin-bottom: 10px;
-// `;
 
 const FilterContent = styled.div`
   display: ${(props) => (props.expanded ? "block" : "none")};

@@ -27,7 +27,6 @@ export default function SideNavBar({ isOpen, setIsOpen }: SideNavBarProps) {
           // activeClassName="active"
         >
           Wesley
-          {/* Add types for the props of 'NavIcon' */}
           <NavIcon>
             <img src={Arrow} alt="Arrow Icon" />
           </NavIcon>

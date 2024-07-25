@@ -40,7 +40,6 @@ export default function SearchFilters({
         {/* A SearchBar component and use it for both the keyword and the year inputs */}
 
         <SearchBar
-          // label="Search for movies"
           placeholder="Search for movies"
           iconImage={SearchIconYellow}
           type="text"
@@ -48,7 +47,6 @@ export default function SearchFilters({
         />
         <SearchBarMobile>
           <SearchBar
-            // label="Search for movies"
             placeholder="Year of release"
             iconImage={CalendarIcon}
             type="number"
