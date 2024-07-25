@@ -44,7 +44,6 @@
     "@types/styled-components": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
-    "tailwindcss": "^3.4.6",
     "typescript": "*"
   }
 }
