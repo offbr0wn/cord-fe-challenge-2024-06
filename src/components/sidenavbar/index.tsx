@@ -36,6 +36,7 @@ export default function SideNavBar({ isOpen, setIsOpen }: SideNavBarProps) {
           className="menu_nav_link"
           to="/discover"
           isActive={location.pathname === "/discover"}
+          reloadDocument 
           // activeClassName="active"
         >
           Discover
