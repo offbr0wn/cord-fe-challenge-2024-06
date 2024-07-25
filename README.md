@@ -24,7 +24,4 @@ The application can be accessed at `http://localhost:3000`. Users can search for
 - node-sass
 - react-router-dom
 
-## Mockups
 
-[mockup]: https://cord-coding-challenges.s3-eu-west-1.amazonaws.com/frontend-test-mockups.zip
-[theMovieDB]: https://www.themoviedb.org/documentation/api
